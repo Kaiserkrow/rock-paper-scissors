@@ -1,0 +1,35 @@
+body {
+  background-color: #ffea00;
+}
+
+.img-container {
+  margin-top: 10vh;
+}
+.btn-custom {
+  margin-top: 7rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+}
+.button-container button {
+  margin-right: 8px;
+}
+.choice,
+.choice-pc {
+  width: 100%;
+}
+.scores {
+  font-size: 1.2rem;
+}
+.hide {
+  display: none;
+}
+.appear {
+  display: block;
+}
+#result {
+  top: 50%;
+}
