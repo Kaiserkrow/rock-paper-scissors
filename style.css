@@ -17,6 +17,17 @@ body {
 .button-container button {
   margin-right: 8px;
 }
+.score-container {
+  width: 30vw;
+  min-width: 300px;
+}
+
+#history-icon {
+  width: 30px;
+}
+#reset-icon {
+  width: 25px;
+}
 .choice,
 .choice-pc {
   width: 100%;
