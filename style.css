@@ -27,10 +27,17 @@ body {
 }
 #reset-icon {
   width: 25px;
+  cursor: pointer;
 }
 .choice,
 .choice-pc {
   width: 100%;
+}
+#computer-score,
+#your-score {
+  font-size: 1.5rem;
+
+  margin-left: 1rem;
 }
 .scores {
   font-size: 1.2rem;

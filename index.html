@@ -10,22 +10,66 @@
   </head>
   <body>
     <div class="container">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Match History</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="d-flex flex-column align-items-center mt-3">
         <div class="d-flex flex-column mt-4 position-relative score-container">
           <div class="d-flex justify-content-between align-items-center">
             <div class="icon-bg">
-              <img src="img/history.webp" id="history-icon" />
+              <img
+                src="img/history.webp"
+                id="history-icon"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              />
             </div>
             <div class="text-center display-4">Score</div>
             <div class="icon-bg">
-              <img src="/img//reset-button.png" id="reset-icon" />
+              <img
+                src="/img/reset-button.png"
+                id="reset-icon"
+                onclick="reset()"
+              />
             </div>
           </div>
           <div class="d-flex mt-3 justify-content-center">
             <div class="me-5 scores">
-              Computer - <span id="computer-score">0</span>
+              Computer :<span id="computer-score" class="fw-bold">0</span>
             </div>
-            <div class="ms-5 scores">You - <span id="your-score">0</span></div>
+            <div class="ms-5 scores">
+              You : <span id="your-score" class="fw-bold">0</span>
+            </div>
           </div>
           <div class="mt-5">
             <div

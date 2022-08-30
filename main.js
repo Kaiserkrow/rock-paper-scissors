@@ -64,3 +64,23 @@ function playerChoice(picked) {
     res.textContent = "Tie";
   }
 }
+
+function reset() {
+  let computer = document.getElementById("computer-score");
+  let player = document.getElementById("your-score");
+  playerScore = 0;
+  pcScore = 0;
+  computer.textContent = pcScore.toString(10);
+  player.textContent = playerScore.toString(10);
+  res.textContent = "";
+
+  for (let i = 0; i < 3; i++) {
+    if (i == 0) {
+      choicesPc[i].classList.add("appear");
+      choices[i].classList.add("appear");
+    } else {
+      choicesPc[i].classList.remove("appear");
+      choices[i].classList.remove("appear");
+    }
+  }
+}
